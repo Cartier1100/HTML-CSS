@@ -1,0 +1,510 @@
+/* 1. PROPIEDADES DE TEXTO */
+p {
+  p { /* Color de la Letra */
+    color: white;
+    /* Normal */
+    color: rgb(255, 255, 255);
+    /* RGB */
+    color: rgba(255, 255, 255, 1);
+    /* RGBA El A de opacidad. Va del 0 al 1. A más 0 más transparente */
+    color: #ffffff;
+    /* Código Hexadecimal */
+  }
+
+  p { /* Color del Fondo del Texto */
+    background-color: white;
+    /* Normal */
+    background-color: rgb(255, 255, 255);
+    /* RGB */
+    background-color: rgba(255, 255, 255, 1);
+    /* RGBA El 1 de opacidad. Va del 0 al 1. A más 0 más transparente */
+    background-color: #ffffff;
+    /* Código Hexadecimal */
+  }
+
+  @font-face { /* Fuente Descargada */
+    font-family: miFuente;
+    /* Nombre Propio de la Fuente */
+    src: url('archivo.tff');
+    /* Dirección Fuente */
+  }
+
+  p { /* Familia del Texto */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Fuente Predeterminada */
+    font-family: miFuente;
+    /* Fuente Descargada */
+
+  }
+
+  p { /* Estilos del Texto */
+    font-style: bold;
+    /* Negrita */
+    font-style: italic;
+    /* Cursiva */
+    font-style: oblique;
+    /* Obliqua */
+    font-style: normal;
+  }
+
+  p { /* Tamaño de la Fuente */
+    font-size: small;
+    /* Fijos y relativos */
+    font-size: 1em;
+    /* Estándar (cada 1em son 16 píxeles) */
+    font-size: 10px;
+    /* Píxeles */
+    font-size: 10cm;
+    /* Centimetros */
+    font-size: 10pt;
+    /* Puntos */
+    font-size: 10in;
+    /* Pulgadas */
+  }
+
+  p { /* Alineación del Texto */
+    text-align: center;
+    /* Orientado Centro */
+    text-align: left;
+    /* Orientado Izquierda */
+    text-align: right;
+    /* Orientado Derecha */
+    text-align: justify;
+    /* Justificado */
+  }
+
+  p { /* Decoración del Texto */
+    text-decoration: dashed;
+    /* Subrayado discontuo */
+    text-decoration: dotted;
+    /* Subrayado punteado */
+    text-decoration: overline underline;
+    /* Subrayado arriba y abajo */
+    text-decoration: wavy;
+    /* Subrayado en ola */
+    text-decoration: line-through;
+    /* Texto tachado */
+    text-decoration: none;
+    /* Texto sin decoración */
+    text-decoration: blink;
+    /* Texto parpadeando */
+
+    text-decoration: black;
+    /* Color del subrayado */
+    text-decoration: 2em;
+    /* Grosor subrayado */
+  }
+
+  p { /* Sombras de Texto */
+    text-shadow: white;
+    /* Color Sombra */
+    text-shadow: 1px 1px;
+    /* Distancia (X e Y) de la Sombra */
+  }
+
+  p { /* Más Propiedades de Texto*/
+    text-indent: 1em;
+    /* Sangría entre cada texto. A más tamaño más espaciado en la primera línea */
+
+    letter-spacing: normal;
+    /* Espacios entre cada letra del texto. A más tamaño más espacio */
+    word-spacing: normal;
+    /* Espacios entre cada palabra del texto. A más tamaño más espacio */
+    line-height: normal;
+    /* Espacios entre cada línea del texto. A más tamaño más espacio */
+
+    text-transform: uppercase;
+    /* Poner el texto en mayúsculas*/
+    text-transform: lowercase;
+    /* Poner el texto en minúsculas*/
+    text-transform: capitalize;
+    /* Poner cada primera letra de cada palabra en mayúsculas */
+    text-transform: none;
+    /* Sin alterar */
+
+    font-variant: small-caps;
+    /* Texto entero en mayúsculas */
+
+    vertical-align: top;
+    /* Alineación con la línea del texto. A más tamaño más arriba de la línea */
+
+    font-weight: normal;
+    /* Sin negrita */
+    font-weight: bold;
+    /* Negrita */
+    font-weight: bolder;
+    /* Negrita, pero no del todo */
+    font-weight: lighter;
+    /* Sin negrita, pero no del todo */
+    font-weight: 400;
+    /* Grados del 100 al 900 de negrita*/
+  }
+}
+
+/* 2. TAMAÑOS */
+img {
+  img {
+    /* Tamaños Fijos */
+    width: 200px;
+    /* Ancho fijo */
+    height: 150px;
+    /* Altura fija */
+    ;
+  }
+
+  img {
+    /* Tamaño Relativo */
+    width: 50%;
+    /* Ancho proporcional a la página */
+    height: 25%;
+    /* Altura proporcional a la página */
+  }
+
+  img {
+    /* Tamaño Automático */
+    size: auto;
+    /* Tamaño ajustada automáticamente para mantener la proporción */
+  }
+
+  img {
+    /* Tamaños máximos y mínimos */
+    min-height: 1em;
+    max-height: 50%;
+
+    min-width: 100px;
+    /* Ancho mínimo */
+    max-width: auto;
+    /* Ancho máximo */
+  }
+}
+
+/* 3. FONDO */
+body {
+  background-color: lightblue;
+  /* Color de fondo */
+
+  background-image: url('imagen.jpg');
+  /* Imagen de fondo con dirección */
+
+  background-repeat: repeat;
+  /* Repetir la imagen en ambas direcciones */
+  background-repeat: repeat-x;
+  /* Repetir la imagen en la dirección de la X */
+  background-repeat: repeat-y;
+  /* Repetir la imagen en la dirección de la Y */
+
+  background-attachment: fixed;
+  /* Fija la imagen de fondo mientras se desplaza la página */
+
+  background-position: right bottom;
+  /* Posición absoluta de la imagen */
+
+  background-size: cover;
+  /* Escala la imagen para que cubra toda la página */
+}
+
+/* 4. BORDES */
+div {
+  div {
+    /* Estilos de Bordes */
+    border-style: dotted;
+    /* Borde punteado */
+    border-style: dashed;
+    /* Borde discontinuo */
+    border-style: solid;
+    /* Borde solido */
+    border-style: double;
+    /* Borde doble */
+    border-style: inset;
+    /* Borde enmarcado hacia adentro */
+    border-style: outset;
+    /* Borde enmarcado hacia afuera */
+    border-style: groove;
+    /* Borde enmarcado doble hacia adentro */
+    border-style: ridge;
+    /* Borde enmarcado doble hacia afuera */
+    border-style: hidden;
+    /* Borde escondido */
+    border-style: none;
+    /* Borde sin estilo */
+  }
+
+  div {
+    /* Grosor de Bordes */
+    border-width: thin;
+    /* Borde delgado */
+    border-width: medium;
+    /* Borde medio */
+    border-width: thick;
+    /* Borde grueso */
+  }
+
+  div {
+    /* Bordes Separados */
+    border-top-style: solid;
+    /* borde superior rojo y sólido */
+    border-top-color: red;
+    /* borde superior rojo y sólido */
+
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dashed;
+    border-left-style: double;
+
+    border-top-color: blue;
+    border-right-color: green;
+    border-bottom-color: orange;
+    border-left-color: purple;
+  }
+
+  border-radius: 15px;
+  /* Redondeo del Borde */
+  border-radius: 5px 0 15px 10px;
+  /* Redondeo específico del Borde */
+}
+
+/* 5. TABLA */
+table {
+  border-collapse: separate;
+  /* Las celdas adyacentes tienen espacio entre ellas */
+  border-collapse: collapse;
+  /* Las celdas adyacentes no tienen espacio entre ellas */
+
+  border-spacing: 10px;
+  /* Espacio de 10 píxeles entre bordes adyacentes */
+
+  table-layout: fixed;
+  /* Distribución absoluta de las celdas */
+  table-layout: auto;
+  /* Distribución relativa al contenido de las celdas */
+}
+
+/* 6. LISTAS */
+ul {
+  ul {
+    /* Estilo de la lista no ordenada */
+    list-style-type: circle;
+    /* Estilo de la lista con círculos */
+    list-style-type: disc;
+    /* Estilos de la lista con discos */
+    list-style-type: square;
+    /* Estilos de la lista con cuadrados */
+  }
+
+  ol {
+    /* Estilo de la lista ordenada */
+    list-style-type: decimal;
+    /* Estilos de la lista con decimales */
+    list-style-type: decimal-leading-zero;
+    /* Estilos de la lista con decimales hacia 0 */
+    list-style-type: lower-alpha;
+    /* Estilos de la lista con letras en minúsculas */
+    list-style-type: upper-alpha;
+    /* Estilos de la lista con letras en mayúsculas */
+    list-style-type: lower-roman;
+    /* Estilos de la lista con números romanos en minúsculas */
+    list-style-type: upper-roman;
+    /* Estilos de la lista con números romanos en mayúsculas */
+  }
+
+  ul,
+  ol {
+    list-style-image: url();
+    /* Estilos de la lista con imagénes */
+
+    list-style-position: top;
+    /* Posición de las listas */
+
+    display: inline;
+    /* Posición de las listas */
+  }
+}
+
+/* 7. TIPOS DE SELECTORES */
+div {
+  #identificador {
+    /* Estilos para elementos con un ID específico */
+    color: black;
+  }
+
+  .clase {
+    /* Estilos para elementos con una clase específica */
+    color: black;
+  }
+
+  h1,
+  p,
+  strong {
+    /* Estilos aplicados a h1, p y strong */
+    color: black;
+  }
+
+  h1.subtitulo {
+    /* Estilos aplicados a elementos con clase 'subtitulo' dentro de h1 */
+    color: black;
+  }
+
+}
+
+/* 8. PSEUDOCLASES / PSEUDOELEMENTOS */
+a { /* Pseudoclases de enlaces */
+  a:link {
+    color: blue;
+    /* Enlace no visitado */
+  }
+
+  a:visited {
+    color: purple;
+    /* Enlace visitado */
+  }
+
+  a:hover {
+    color: red;
+    /* Cursor sobre el enlace */
+  }
+
+  a:focus {
+    outline: 2px solid green;
+    /* Enlace enfocado */
+  }
+}
+p { /* PseudoClases sobre párrafos */
+  p:hover {
+    /* Estilo de cambio de color al pasar el cursor sobre un párrafo */
+    color: yellow;
+  }
+
+  p:first-of-type {
+    /* Estilos para el primer elemento de cada etiqueta */
+    font-weight: bold;
+    /* Primer párrafo */
+  }
+
+  p:last-of-type {
+    /* Estilos para el último elemento de cada etiqueta */
+    font-style: italic;
+    /* Último párrafo */
+  }
+
+  p:first-child {
+    /* Estilos para el primer elemento de la etiqueta */
+    color: green;
+  }
+
+  p:last-child {
+    /* Estilos para el último elemento de la etiqueta */
+    color: blue;
+  }
+
+  p:only-child {
+    /* Estilos para los elementos únicos de la etiqueta */
+    font-size: 20px;
+    /* Único hijo */
+  }
+}
+p { /* PseudoElementos sobre párrafos */
+  p::first-line {
+    /* Estilos para la primera línea de un párrafo */
+    text-transform: uppercase;
+    /* Transforma la primera línea en mayúsculas */
+  }
+
+  p::first-letter {
+    /* Estilos para la primera letra de un párrafo */
+    font-size: 2.5em;
+    /* Tamaño de la primera letra */
+    color: magenta;
+    /* Color de la primera letra */
+  }
+
+  p::before {
+    /* Estilos para el contenido antes y después de un párrafo */
+    content: "Antes";
+    /* Agrega contenido antes del párrafo */
+  }
+
+  p::after {
+    content: "Después";
+    /* Agrega contenido después del párrafo */
+  }
+}
+
+/* 9. ELEMENTOS FLOTANTES */
+div {
+  /* Ejemplo de elemento flotante */
+  float: left;
+  /* Hace que el elemento flote a la izquierda */
+  float: right;
+  /* Hace que el elemento flote a la derecha */
+  float: none;
+  /* Elimina la flotación del elemento */
+
+  clear: left;
+  /* El elemento se coloca debajo de cualquier elemento flotante a la izquierda */
+  clear: right;
+  /* El elemento se coloca debajo de cualquier elemento flotante a la derecha */
+  clear: both;
+  /* El elemento se coloca debajo de cualquier elemento flotante, ya sea a la izquierda o a la derecha */
+}
+
+/* 10. VISIBILIDAD DE UN ELEMENTO */
+div { /* Ejemplo de ocultar un elemento sin eliminar su espacio */  
+  visibility: hidden; /* Oculta el elemento pero mantiene su espacio */  
+  visibility: visible; /* Hace visible el elemento si previamente estaba oculto */  
+  visibility: collapse; /* Oculta el elemento y elimina su espacio, como si no estuviera presente */
+  visibility: none; /* Oculta completamente el elemento y elimina su espacio */  
+}
+
+/* 11. POSICIONAMIENTO */
+div {  
+  position: static; /* Posicionamiento estático */
+  position: fixed; /* Posicionamiento fijo */
+  position: relative; /* Posicionamiento relativo */
+  position: absolute; /* Posicionamiento absoluto */ 
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* 12. COLUMNAS */
+p {
+  column-count: 2; /* Número de columnas */  
+  column-gap: 2em; /* Espacio entre cada columna */  
+  column-rule: 1px solid black; /* Borde de las columnas */  
+  column-width: 200px; /* Ancho de cada columna */ 
+  columns: 100px 3; /* Estilo Global */  
+}
+
+/* 13. TRANSICIONES Y TRANSFORMACIONES */
+p {
+  div { /* transition: [Propiedad a modificar] [Duración] [Tipo de animación] [Retardo]; */
+    /* [Propiedades a modificar]: El estilo que vayamos a alterar: Borde, tamaño o demás */    
+    /* [Duración en segundos]: se debe especificar el número de segundos que va a durar la animación. Por ejemplo: 3s (3 segundos). */
+    /* [Tipo de animación]: esta propiedad es opcional y sirve para indicar la velocidad de la animación. Algunas de las posibilidades son las siguientes: */
+      transition: linear; /* La velocidad de la animación es uniforme en todo el recorrido. */
+      transition: ease; /* La velocidad se acelera al inicio, luego se retarda un poco y se acelera al final de nuevo. */
+      transition: ease-in; /* La animación empieza lentamente y va aumentando progresivamente. */
+      transition: ease-out; /* La animación empieza muy rápida y va descendiendo progresivamente. */
+      transition: ease-in-out; /* La animación empieza y acaba lentamente, y es en la parte central del recorrido donde la velocidad es más rápida. */
+    /* [Retardo]: tiempo (en segundos) que el navegador esperará antes de poner en marcha la animación. Se especifica el número de segundos a esperar seguido de la «s» (ejemplo: 1s). */
+  }
+  div { /* transform: [Tipo de transformación]; */
+    /* Scale: Modifica el tamaño de los elementos */
+      transform: scale(0.5); /* Escala el elemento a la mitad */
+      transform: scale(0.5, 2); /* Escala el elemento a la mitad en ancho y lo duplica en altura */
+
+    /* Translate: Cambia la posición del elemento hacia la izquierda, derecha, arriba o abajo */
+      transform: translate(10px); /* Traslada el elemento 10px hacia la derecha */
+      transform: translate(-10px); /* Traslada el elemento 10px hacia la izquierda */
+      transform: translate(-10px, 50px); /* Traslada el elemento 10px hacia la izquierda y 50px hacia abajo */
+      transform: translate(10px, -50px); /* Traslada el elemento 10px hacia la derecha y 50 hacia arriba */
+
+    /* Rotate: Gira o rota los elementos en grados: rotate(v). */
+      transform: rotate(45deg); /* Rota el elemento 45 grados */
+
+    /* Skew: Distorsiona los elementos según el ángulo en grados. La función skew() se establece con uno o dos valores: skew(x) o skew(x,y). */
+      transform: skew(45deg); /* Distorsiona el elemento 45 grados en el eje x */
+  }
+}

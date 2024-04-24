@@ -1,0 +1,320 @@
+<!-- 1. Etiquetas básicas: -->
+<div><!-- h, strong, em, hr y br: -->    
+  <!-- h1 … h6: Titular. Siempre en negrita -->
+    <h1>N G H I</h1>
+    <h2>E T Q W</h2>
+    <h3>C V G Y</h3>
+    <h4>L K Y R</h4>
+    <h5>W T O V</h5>
+    <h6>Z N M W</h6>
+  <!-- strong: Marca lo que esté dentro de la etiqueta en negrita -->
+    <strong></strong>
+  <!-- em: Marca lo que esté dentro de la etiqueta en cursiva -->
+    <em></em>
+  <!-- hr: Crea una línea en la página -->
+    <hr>
+  <!-- br: Deja una línea en blanco donde se ponga la etiqueta -->
+    <br>
+</div>
+<div><!-- Tablas: --> 
+  <!-- table: la table en sí. Todo está dentro de este -->
+    <table></table>
+  <!-- caption: Texto como cabecero de la tabla -->
+    <caption></caption>
+  <!-- thead: Parte de la tabla con fila (o filas) que hacen referencia a los datos de abajo (Curso, Ciclo, CF, Alumn@s...) -->
+    <thead></thead>
+  <!-- tbody: Parte de la tabla con filas (o fila) que contienen los datos de la tabla -->
+    <tbody></tbody>
+  <!-- tfoot: Parte de la tabla con fila (o filas) que suele contener los totales de los datos del tbody (OPCIONALES) -->
+    <tfoot></tfoot>
+  <!-- tr: Fila de una tabla. Aunque haya solo una fila se pone el tr -->
+    <tr></tr>
+  <!-- th: Celda de una tabla en negrita y centrada. De normal para el tr del thead -->
+    <th></th>
+  <!-- td: Celda de una tabla normal -->
+    <td></td>
+  <!-- rowspan=: Colapsar varias celdas de una fila. Por cada número se colapsa esas celdas -->
+    <td/th rowspan="2"></td/th>
+  <!-- colspan=: Colapsar varias celdas de una columan. Por cada número se colapsa esas celdas -->
+    <td/th colspan="3"></td/th>    
+  <!-- EJEMPLO COMPLETO -->
+    <table>
+      <caption>Cabecero</caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td rowspan="2"></td>
+          <td rowspan="4"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td rowspan="2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <th></th>
+        </tr>
+        <tr>
+          <td></td>
+          <td rowspan="2"></td>
+          <td rowspan="2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <th></th>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="3"></th>
+          <th></th>
+        </tr>
+      </tfoot>
+    </table>
+</div>
+<div><!-- Listas: -->
+  <!-- ul: Lista no ordenada. Por cada li se le aplica ese estilo. Solo se puede poner li’s -->
+    <ul></ul>
+  <!-- ol: Lista ordenada. Por cada li se le añade uno al contador. Solo se puede poner li’s -->ç
+    <ol></ol>
+  <!-- li: término de una lista. Se puede poner de todo e, incluso, ul’s, ol’s o dl’s -->
+    <li></li>
+  <!-- dl: Lista de definición. Por cada li se le aplica ese estilo. Solo se puede poner dt y dd dentro -->
+    <dl></dl>
+  <!-- dt: término de una definición -->
+    <dt></dt>
+  <!-- dd: definición del término -->
+    <dd></dd>
+  <!-- EJEMPLO COMPLETO SIMPLE -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+    <dl>
+      <dt></dt>
+      <dd></dd>
+
+      <dt></dt>
+      <dd></dd>
+      
+      <dt></dt>
+      <dd></dd>
+    </dl>
+  <!-- EJEMPLO COMPLETO ANIDADA -->
+    <ul>
+      <li>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </li>
+      <li>
+        <ol>
+          <li>
+            <ul>
+              <li></li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <dl>
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </li>
+    </ul>
+</div>  
+<div><!-- Formularios: -->
+  <!-- form: El formulario en sí. Todo está dentro de este -->
+    <form></form>
+  <!-- fieldeset: Un marco de un formulario. Se usa para secciones del formulario -->
+    <fieldset></fieldset>
+  <!-- legend: Texto que está dentro del marco del fieldset -->
+    <legend></legend>  
+  <!-- input: Campo en el que depende del tipo introduces un dato u otros -->
+    <input>
+  <!-- textarea: Campo en el que introduces texto -->
+    <textarea></textarea>
+  <!-- select: Lista desplegable -->
+    <select></select>
+  <!-- option: Una de las opciones de la lista desplegable  -->
+    <option></option>
+  <!-- optgroup: Un grupo de opciones de la lista desplegable  -->
+    <optgroup></optgroup>
+  <!-- name=: Nombre del formulario o de una pregunta. Cuando se mande aparecerá eso y luego el valor -->
+    <form name=""></form>
+    <input name="">
+    <select name=""></select>
+  <!-- type=: Depende del atributo cambiará la pregunta -->
+    <input type="text"> Nombre de usuario
+    <input type="password" > Contraseña
+    <input type="radio"> Botón Radial
+    <input type="checkbox"> Botón Verificación
+    <input type="submit"> Botón Enviar datos
+    <input type="reset"> Botón Reiniciar
+    <input type="button"> Botón Genérico
+    <input type="file"> Añadir Archivo
+    <input type="email"> Correo
+    <input type="range" min="" max=""> Rango de valores
+    <input type="time"> Poner Fecha
+    <input type="color"> Escoger Color
+    <input type="date"> Muesta Calendario
+    <input type="number" min="" max="" step=""> Rango de números
+    <input type="week"> Escoger semana
+  <!-- Otros atributos -->
+    <form action="mailto:correofalso@gmail.com"></form> Mandar a ese correo cuando se envíe
+    <form method="post"></form> Que contenga los datos de ese formulario al enviarse
+    <form enctype="text/plain"></form> Indicamos que se envíe como texto plano
+    <input required> Marcamos que es obligatorio
+    <textarea placeholder=""></textarea> Texto que desaparece al comenzar a escribir
+    <textarea cols="" rows=""></textarea> Número de carácteres y filas de espacio para escribir
+    <select multiple></select> Para mostrar todas las opciones sin desplegar
+    <option value=""></option> Valor de una de las opciones de la pregunta. Si hubiese varias opciones en la misma pregunta, se diferencian por eso
+    <optgroup label=""></optgroup> Etiqueta para el grupo de opciones
+  <!-- EJEMPLO COMPLETO -->
+    <form name="miformulario" action="mailto:alvaro0711sanchez@gmail.com" method="post" enctype="text/plain">
+      <fieldset>
+        <legend></legend>
+        <fieldset>
+          <legend></legend>
+          <p>
+            Nombre: <input name="Name" type="text">
+          </p>
+          <p>
+            Usuario o usuaria*: <input required name="User" type="text"> Obligatorio
+          </p>
+          <p>
+            Contraseñ;a*: <input required type="password" name="Password"> Obligatorio
+          </p>
+          <p>
+            Descripción: 
+            <textarea name="Description" placeholder="Introduce descripci&oacute;n"></textarea>
+          </p>
+          <p>
+            Estado civil:
+            <select name="Estado_Civil">
+              <option value="S">Solter@</option>
+              <option value="C">Casad@</option>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend></legend>
+          <p></p>
+            <p><input type="radio" name="nombre" value="0"></p>
+            <p><input type="radio" name="nombre" value="1"></p>
+            <p><input type="radio" name="nombre" value="2"></p>
+            <p><input type="radio" name="nombre" value="3"></p>
+            <p><input type="radio" name="nombre" value="4"></p>
+            <p><input type="radio" name="nombre" value="5"></p>          
+          <p></p>
+            <p><input type="checkbox" name="nombre" value="1"></p>
+            <p><input type="checkbox" name="nombre" value="2"></p>
+            <p><input type="checkbox" name="nombre" value="4"></p>
+            <p><input type="checkbox" name="nombre" value="3"></p>
+            <p><input type="checkbox" name="nombre" value="5"></p>
+          <p>
+            <select multiple name="Hobbies">
+              <option value="C"></option>
+              <option value="M"></option>
+              <option value="L"></option>
+              <option value="C"></option>
+              <option value="J"></option>
+            </select>
+          </p>
+          <p>
+            <select name=”Qualificationes”>
+              <optgroup label="Etiqueta 1">
+                <option value="N"></option>
+                <option value="EGB"></option>
+                <option value="ESO"></option>
+                <option value="FPE"></option>
+              </optgroup>
+              <optgroup label="Etiqueta 2">
+                <option value="FPB"></option>
+                <option value="CFGM"></option>
+                <option value="CFGS"></option>
+              </optgroup>
+              <optgroup label="Etiqueta 3">
+                <option value="D"></option>
+                <option value="L"></option>
+                <option value="G"></option>
+                <option value="M"></option>
+            </select>
+          </p>
+          <p><input type="file" name="curriculum"></p>
+          <p><input type="submit" value="Enviar"></p>
+          <p><input type="reset" value="Limpiar controles"></p>          
+        </fieldset>
+      </fieldset>
+    </form>
+</div>
+<div><!-- Imágenes, Vídeos y Audios: -->
+  <!-- img: Para poner imágenes -->
+    <img src=""> Dirección de la imagen. Tanto descargada como online
+    <img alt=""> Nombre alternativo de la imagen. Facilita que encuentre la imagen
+    <img title=""> Texto que aparece al pasar por la foto
+  <!-- video: Para poner un video -->
+    <video src=""></video> Dirección del video. Tanto descargada como online
+    <video controls></video> Que aparezcan los controles de reproducción del vídeo
+    <video autoplay></video> Que se reproduzca automáticamente cuando se cargue
+    <video preload="auto"></video> Que se cargue en cuanto se acceda a la página
+    <video preload="none"></video> Que se cargue al hacer clic
+    <video loop></video> Que se reproduzca en bucle
+    <video muted></video> Que se reproduzca sin sonido
+  <!-- audio: Para poner un audio -->
+    <audio src=""></audio> Dirección del audio. Tanto descargada como online
+    <audio controls></audio> Que aparezcan los controles de reproducción del audio
+    <audio autoplay></audio> Que se reproduzca automáticamente cuando se cargue
+    <audio preload="auto"></audio> Que se cargue en cuanto se acceda a la página
+    <audio preload="none"></audio> Que se cargue al hacer clic
+    <audio loop></audio> Que se reproduzca en bucle
+    <audio muted></audio> Que se reproduzca sin sonido
+</div>
+<div><!-- Enlaces y Direcciones: -->
+  <!-- Enlace Interno: Moverse a una parte de la propia página -->
+    <h1 id="Ejemplo"></h1>
+    <a href="./EXAMEN_MARCAS.html#Ejemplo">Enlace interno</a>
+  <!-- Enlace Externo -->
+    <a href="./Otra página de la misma carpeta">Enlace a otra página de la misma carpeta</a>
+    <a href="../Otra página de otra carpeta">Enlace a otra página de otra carpeta</a>
+  <!-- Enlace a una pagína web -->
+    <a href="https://aula0.cuatrovientos.org/">Enlace a una página externa</a>
+  <!-- Enviar un correo -->
+    <a href="mailto:alvarofalso@gmail.com">Enlace para enviar un correo</a>
+</div>
+<!-- 2.	Estilos CSS: -->
+<div><!-- Enlazar una hoja de estilos y favicon -->
+  <link rel="icon" href="Fotos/favicon.png" type="image/png">
+  <link rel="stylesheet" href="HojaDeEstilos.css">
+</div>
